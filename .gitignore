@@ -1,0 +1,14 @@
+# Build Folders
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Local settings
+appsettings.Development.json
+
+# Others
+*.log
+*.tmp
