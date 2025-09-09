@@ -28,9 +28,9 @@
 
 ## 2. Logowanie
 
-Endpoint: POST /api/user/login
+- Endpoint: POST /api/user/login
 
-Body (JSON):
+- Body (JSON):
 {
   "email": "user@example.com",
   "password": "password123"
@@ -51,7 +51,7 @@ Body (JSON):
 
 ## 1. Pobranie wszystkich quizów
 
-Endpoint: GET /api/quiz
+- Endpoint: GET /api/quiz
 
 ### Odpowiedzi:
 
@@ -61,9 +61,9 @@ Endpoint: GET /api/quiz
 
 ## 2. Pobranie losowego pytania z quizu
 
-Endpoint: GET /api/quiz/randomTask/{code}
+- Endpoint: GET /api/quiz/randomTask/{code}
 
-Parametry:
+- Parametry:
 
 code – kod quizu
 
@@ -75,9 +75,9 @@ code – kod quizu
 
 ## 3. Rozwiązywanie quizu
 
-Endpoint: GET /api/quiz/quiz/{code}
+- Endpoint: GET /api/quiz/quiz/{code}
 
-Parametry:
+- Parametry:
 
 code – kod quizu
 
@@ -91,9 +91,9 @@ code – kod quizu
 
 ## 4. Pobranie quizu do edycji
 
-Endpoint: GET /api/quiz/edit-quiz/{code}
+- Endpoint: GET /api/quiz/edit-quiz/{code}
 
-Parametry:
+- Parametry:
 
 code – kod quizu
 
@@ -107,7 +107,7 @@ code – kod quizu
 
 ## 5. Pobranie odpowiedzi sesji
 
-Endpoint: GET /api/quiz/session-answer
+- Endpoint: GET /api/quiz/session-answer
 
 ### Odpowiedzi:
 
@@ -115,9 +115,9 @@ Endpoint: GET /api/quiz/session-answer
 
 ## 6. Obliczenie wyniku quizu
 
-Endpoint: POST /api/quiz/submit-quiz
+- Endpoint: POST /api/quiz/submit-quiz
 
-Body (JSON):
+- Body (JSON):
 
 [
   {
@@ -142,7 +142,7 @@ Body (JSON):
 
 ## 7. Sprawdzenie poprawności odpowiedzi
 
-Endpoint: GET /api/quiz/{code}/question/{questionId}/answer/{answerId}
+- Endpoint: GET /api/quiz/{code}/question/{questionId}/answer/{answerId}
 
 ### Odpowiedzi:
 
@@ -156,7 +156,7 @@ Endpoint: GET /api/quiz/{code}/question/{questionId}/answer/{answerId}
 
 ## 8. Tworzenie quizu
 
-Endpoint: POST /api/quiz/CreateQuiz
+- Endpoint: POST /api/quiz/CreateQuiz
 
 ### Odpowiedzi:
 
@@ -164,9 +164,9 @@ Endpoint: POST /api/quiz/CreateQuiz
 
 ## 9. Dodawanie pytania do quizu
 
-Endpoint: POST /api/quiz/{code}/questions
+- Endpoint: POST /api/quiz/{code}/questions
 
-Body: CreateQuestionDto
+- Body: CreateQuestionDto
 
 ### Odpowiedzi:
 
@@ -178,9 +178,9 @@ Body: CreateQuestionDto
 
 ## 10. Dodawanie odpowiedzi do pytania
 
-Endpoint: POST /api/quiz/{code}/question/{questId}
+- Endpoint: POST /api/quiz/{code}/question/{questId}
 
-Body: CreateAnswerDto
+- Body: CreateAnswerDto
 
 ### Odpowiedzi:
 
@@ -194,9 +194,9 @@ Body: CreateAnswerDto
 
 ## 11. Aktualizacja pytania
 
-Endpoint: PUT /api/quiz/{code}/question/{questionId}
+- Endpoint: PUT /api/quiz/{code}/question/{questionId}
 
-Body: Question
+- Body: Question
 
 ### Odpowiedzi:
 
@@ -208,9 +208,9 @@ Body: Question
 
 ## 12. Aktualizacja odpowiedzi
 
-Endpoint: PUT /api/quiz/{code}/question/{questionId}/{answerId}
+- Endpoint: PUT /api/quiz/{code}/question/{questionId}/{answerId}
 
-Body: Answer
+- Body: Answer
 
 ### Odpowiedzi:
 
@@ -224,7 +224,7 @@ Body: Answer
 
 ## 13. Usuwanie quizu
 
-Endpoint: DELETE /api/quiz/{code}
+- Endpoint: DELETE /api/quiz/{code}
 
 ### Odpowiedzi:
 
@@ -236,7 +236,7 @@ Endpoint: DELETE /api/quiz/{code}
 
 ##14. Usuwanie pytania
  
-Endpoint: DELETE /api/quiz/{code}/question/{questionId}
+- Endpoint: DELETE /api/quiz/{code}/question/{questionId}
 
 ### Odpowiedzi:
 
@@ -248,7 +248,7 @@ Endpoint: DELETE /api/quiz/{code}/question/{questionId}
 
 ## 15. Usuwanie odpowiedzi
 
-Endpoint: DELETE /api/quiz/{code}/question/{questionId}/answer/{answerId}
+- Endpoint: DELETE /api/quiz/{code}/question/{questionId}/answer/{answerId}
 
 ### Odpowiedzi:
 
