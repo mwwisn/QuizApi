@@ -24,3 +24,25 @@
 400 Bad Request – User not created
 
 500 Internal Server Error – Unexpected error.
+
+
+## 2. Logowanie
+
+Endpoint: POST /api/user/login
+
+Body (JSON):
+{
+  "email": "user@example.com",
+  "password": "password123"
+}
+
+
+### Odpowiedzi:
+
+200 OK – zwraca token JWT:
+{
+  "token": "<JWT Token>"
+}
+400 Bad Request – User not found lub Wrong password
+
+500 Internal Server Error – Błąd serwera
