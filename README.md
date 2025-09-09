@@ -17,3 +17,10 @@
   "username": "username",
   "password": "password123"
 }
+
+### Odpowiedzi:
+200 OK – User Created
+
+400 Bad Request – User not created
+
+500 Internal Server Error – Unexpected error.
