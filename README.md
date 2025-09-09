@@ -65,7 +65,7 @@
 
 - Parametry:
 
--- code – kod quizu
+code – kod quizu
 
 ### Odpowiedzi:
 
