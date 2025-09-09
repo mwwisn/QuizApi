@@ -1,5 +1,5 @@
 # Dokumentacja API – Quiz_API
-Autoryzacja
+## Autoryzacja
 
 -Wszystkie endpointy w QuizController wymagają Bearer Token w nagłówku Authorization.
 
